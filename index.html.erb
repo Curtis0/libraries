@@ -21,7 +21,7 @@
       <tr>
         <td><%= library.title %></td>
         <td><%= library.author %></td>
-        <td><%= library.price %></td>
+        <td><%= number_to_currency(library.price, unit: '¥',precision: 0) %></td>
         <td><%= library.publisher %></td>
         <td><%= library.release_date.strftime("%Y/%m/%d") %></td>
         <td><%= library.ISBN %></td>
